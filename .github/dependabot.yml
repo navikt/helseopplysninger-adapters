@@ -14,7 +14,7 @@ updates:
 - package-ecosystem: maven
   directory: "/"
   registries:
-     - boot-cluster-conditionals
+     - helseopplysningeer-adapters
   schedule:
     interval: daily
   open-pull-requests-limit: 10
