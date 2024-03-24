@@ -47,8 +47,8 @@
         </dependency>
     </dependencies>
     <scm>
-        <connection>scm:git:https://github.com/navikt/aap-domain.git</connection>
-        <developerConnection>scm:git:https://github.com/navikt/aap-domain.git
+        <connection>scm:git:https://github.com/navikt/helseopplysninger-adapters.git</connection>
+        <developerConnection>scm:git:https://github.com/navikt/helseopplysninger-adapters.git
         </developerConnection>
         <tag>HEAD</tag>
     </scm>
