@@ -1,0 +1,1 @@
+# aap-domain# helseopplysninger-adapters
