@@ -8,9 +8,8 @@ jobs:
   publish-release:
     runs-on: ubuntu-latest
     permissions:
-      packages: write
-      contents: write
-      id-token: write
+        contents: read
+        packages: write
     steps:
             
       - name: Checkout latest code
@@ -41,4 +40,4 @@ jobs:
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions release"
-          mvn  --settings .m2/settings.xml --batch-mode -DreleaseVersion=${NEW_VERSION}  -DignoreSnapshots=true release:prepare release:perform
+          mvn  --batch-mode -DreleaseVersion=${NEW_VERSION}  -DignoreSnapshots=true release:prepare release:perform

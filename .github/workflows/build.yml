@@ -37,7 +37,7 @@ jobs:
         shell: bash
         run: |
           echo "Building $(echo $GITHUB_SHA | cut -c1-7)"
-          mvn   deploy   --batch-mode --settings ./.m2/settings.xml 
+          mvn   deploy   --batch-mode 
           echo "Bygget og testet"
         env:
           GITHUB_USERNAME: x-access-token
