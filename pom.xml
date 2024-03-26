@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.nav.helseopplysninger</groupId>
     <artifactId>helseopplysninger-adapters</artifactId>
-    <version>1.0.10-SNAPSHOT</version>
+    <version>1.0.10</version>
     <name>adapters</name>
     <description>helse-adapters</description>
     <parent>
@@ -14,7 +14,8 @@
     </parent>
     <scm>
         <developerConnection>scm:git:https://github.com/navikt/helseopplysninger-adapters.git</developerConnection>
-    </scm>
+      <tag>helseopplysninger-adapters-1.0.10</tag>
+  </scm>
     <properties>
         <java.version>21</java.version>
         <kotlin.version>1.9.23</kotlin.version>
