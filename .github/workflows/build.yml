@@ -40,4 +40,4 @@ jobs:
           mvn   deploy   --batch-mode 
           echo "Bygget og testet"
         env:
-          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
