@@ -12,6 +12,9 @@
         <version>3.2.4</version>
         <relativePath />
     </parent>
+    <scm>
+        <developerConnection>scm:git:https://github.com/navikt/helseopplysninger-adapters.git</developerConnection>
+    </scm>
     <properties>
         <java.version>21</java.version>
         <kotlin.version>1.9.23</kotlin.version>
@@ -46,12 +49,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <scm>
-        <connection>scm:git:https://github.com/navikt/helseopplysninger-adapters.git</connection>
-        <developerConnection>scm:git:https://github.com/navikt/helseopplysninger-adapters.git
-        </developerConnection>
-        <tag>HEAD</tag>
-    </scm>
 <build>
 <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
 <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
