@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_ACTOR: ${{ github.actor }}
           NEW_VERSION: ${{ github.event.release.tag_name }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
         #run:  mvn  --batch-mode deploy
 
         run:  mvn  --batch-mode -DreleaseVersion=${NEW_VERSION}  -DignoreSnapshots=true release:prepare release:perform
