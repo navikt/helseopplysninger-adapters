@@ -12,14 +12,13 @@
         <version>3.2.4</version>
         <relativePath />
     </parent>
-    <!--
     <scm>
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
         <url>git@github.com:navikt/helseopplysninger-adapters.git</url>
         <tag>HEAD</tag>
 
-    </scm>-->
+    </scm>
     <properties>
         <java.version>21</java.version>
         <kotlin.version>1.9.23</kotlin.version>
