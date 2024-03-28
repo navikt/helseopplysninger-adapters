@@ -15,9 +15,8 @@
     <scm>
         <connection>scm:git:git@github.com:navikt/helseopplysninger-adapters.git</connection>
         <developerConnection>scm:git:git@github.com:navikt/helseopplysninger-adapters.git</developerConnection>
-        <url>https://navikt/helseopplysninger-adapters.git</url>
+        <url>https://github.com/navikt/helseopplysninger-adapters.git</url>
         <tag>HEAD</tag>
-
     </scm>
     <properties>
         <java.version>21</java.version>
