@@ -34,6 +34,9 @@ jobs:
           GITHUB_ACTOR: ${{ github.actor }}
           NEW_VERSION: ${{ github.event.release.tag_name }}
           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
-        #run:  mvn  --batch-mode deploy
+        run:  |
+          mvn -B versions:set -DnewVersion="$NEW_VERSION"
+          mvn -B versions:commit
+          mvn  --batch-mode deploy
 
-        run:  mvn  --batch-mode -DreleaseVersion=${NEW_VERSION}  -DignoreSnapshots=true release:prepare release:perform
+        #run:  mvn  --batch-mode -DreleaseVersion=${NEW_VERSION}  -DignoreSnapshots=true release:prepare release:perform
