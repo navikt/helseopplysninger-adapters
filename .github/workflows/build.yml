@@ -7,8 +7,6 @@ on:
     
 jobs:
   release-notes:
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -41,5 +39,4 @@ jobs:
           echo "Building $(echo $GITHUB_SHA | cut -c1-7)"
           mvn   deploy   --batch-mode 
           echo "Bygget og testet"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
