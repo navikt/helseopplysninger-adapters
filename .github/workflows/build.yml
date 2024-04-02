@@ -37,6 +37,6 @@ jobs:
         shell: bash
         run: |
           echo "Building $(echo $GITHUB_SHA | cut -c1-7)"
-          mvn   deploy   --batch-mode 
+          mvn   install   --batch-mode 
           echo "Bygget og testet"
 
