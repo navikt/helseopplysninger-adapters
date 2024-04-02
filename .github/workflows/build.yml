@@ -32,9 +32,6 @@ jobs:
           distribution: temurin
           java-version: 21
           cache: maven
-      
-      - name: Hent tag    
-        run: echo "TAG=$(date +%Y.%m.%d.%H%M%S)-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
        
       - name: Bygg og test
         shell: bash
