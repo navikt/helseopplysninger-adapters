@@ -37,8 +37,6 @@ jobs:
           NEW_VERSION: ${{ github.event.release.tag_name }}
           GITHUB_USERNAME: x-access-token
           GITHUB_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions release"
