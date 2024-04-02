@@ -7,9 +7,11 @@ on:
 jobs:
   publish-release:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
+      contents: read
       packages: write
-      contents: write
     steps:
             
       - name: Checkout latest code
@@ -23,16 +25,9 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Configure Git user
-        run: |
-            git config user.email "actions@github.com"
-            git config user.name "GitHub Actions"
-            
       - name: Publish artifact
         env:
-          GITHUB_ACTOR: ${{ github.actor }}
           NEW_VERSION: ${{ github.event.release.tag_name }}
-          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
         run:  |
           mvn -B versions:set -DnewVersion="$NEW_VERSION"
           mvn -B versions:commit
