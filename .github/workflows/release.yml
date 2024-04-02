@@ -8,9 +8,8 @@ jobs:
   publish-release:
     runs-on: ubuntu-latest
     permissions:
-        id-token: write
-        contents: write
-        packages: write
+      packages: write
+      contents: write
     steps:
             
       - name: Checkout latest code
