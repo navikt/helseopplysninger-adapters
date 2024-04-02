@@ -13,8 +13,10 @@
         <relativePath />
     </parent>
     <scm>
+        <!--
         <connection>scm:git:git@github.com:navikt/helseopplysninger-adapters.git</connection>
         <developerConnection>scm:git:git@github.com:navikt/helseopplysninger-adapters.git</developerConnection>
+        -->
         <url>https://github.com/navikt/helseopplysninger-adapters</url>
         <tag>HEAD</tag>
     </scm>
