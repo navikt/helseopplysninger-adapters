@@ -34,5 +34,5 @@ jobs:
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions release"
-          mvn  --settings .m2/settings.xml --batch-mode -DreleaseVersion=${NEW_VERSION}  release:prepare release:perform
+          mvn  --settings .github/.m2/settings.xml --batch-mode -DreleaseVersion=${NEW_VERSION}  release:prepare release:perform
      
