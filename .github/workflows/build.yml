@@ -6,7 +6,10 @@ on:
       - main         # Push events on master branch
     
 jobs:
+
   release-notes:
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     runs-on: ubuntu-latest
     permissions:
       packages: write
