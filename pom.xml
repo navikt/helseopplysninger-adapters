@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.nav.helseopplysninger</groupId>
     <artifactId>helseopplysninger-adapters</artifactId>
-    <version>1.0.30</version>
+    <version>1.0.32-SNAPSHOT</version>
     <name>adapters</name>
     <description>helse-adapters</description>
     <parent>
@@ -55,7 +55,7 @@
     <build>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
         <plugins>
-            
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
